@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css"
+    />
+    <title>Capstone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+`
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/filepond/4.31.1/filepond.css" integrity="sha512-Yi/JvnV4Mj8ZbrH8rGRMwYvgRXviV/jlZLlqsypT5lfzjwdPhJr/yNoIs2RGZDvRWbcazM5cjxVa6Ycq3ukEEg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+      <!-- FancyBox CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  <link rel="shortcut icon" type="image/png" href="./src/assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="./src/assets/css/styles.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+ 
+ 
+ 
+  <link rel="shortcut icon" href="./template/assets/images/favicon.png" />
+
+    
+
+    <style>
+
+    .active {
+      background-color: rgba(44, 131, 4, 0.579);
+    }
+
+    .fixed-size-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .image-container {
+            position: relative;
+        }
+        .delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+}
+
+
+
+
+
+    </style>
+
+
+
+    <div id="main-container-capstone"></div>
+
+    <script src="./src/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./src/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/sidebarmenu.js"></script>
+    <script src="./src/assets/js/app.min.js"></script>
+    <!-- <script src="./src/assets/libs/apexcharts/dist/apexcharts.min.js"></script> -->
+    <script src="./src/assets/libs/simplebar/dist/simplebar.js"></script>
+    <!-- <script src="./src/assets/js/dashboard.js"></script> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.10.2/page.js"></script>
+    <!-- <script src="./template/assets/vendors/js/vendor.bundle.base.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- Include DataTables jQuery plugin -->
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script> -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/filepond/4.31.1/filepond.min.js" integrity="sha512-UlakzTkpbSDfqJ7iKnPpXZ3HwcCnFtxYo1g95pxZxQXrcCLB0OP9+uUaFEj5vpX7WwexnUqYXIzplbxq9KSatw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/login.js"></script>
+    <script src="./js/register.js"></script>
+    <script src="./js/forgotpassword.js"></script>
+    <script src="./js/forgotpasswordform.js"></script>
+    <script src="./js/success-register.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/userManagement.js"></script>
+    <script src="./js/logout.js"></script>
+    <script src="./js/accountSetting.js"></script>
+    <script src="./js/archive.js"></script>
+    <script src="./js/guests.js"></script>
+    <script src="./js/room.js"></script>
+    <script src="./js/reserve.js"></script>
+    <script src="./js/billing.js"></script>
+    <script src="./js/manager.js"></script>
+    <script src="./js/frontdesk.js"></script>
+    <script src="./js/housekeeper.js"></script>
+    <script src="./js/houseKper.js"></script>
+    <script src="./js/housekeepertask.js"></script>
+
+
+
+    <script src="./js/routes.js"></script>
+
+    <base href="/capstone/" />
+  </body>
+</html>
